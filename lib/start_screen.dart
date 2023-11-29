@@ -15,7 +15,7 @@ class StartScreen extends StatelessWidget {
           Image.asset(
               'assets/images/quiz-logo.png',
               width: 300,
-              color: Color.fromARGB(149, 244, 243, 243),
+              color: const Color.fromARGB(149, 244, 243, 243),
             ),
           // Opacity(
           //   opacity: 0.6,
