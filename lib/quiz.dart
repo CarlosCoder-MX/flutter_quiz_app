@@ -46,7 +46,7 @@ Widget build(BuildContext context) {
   } else if (activeScreen == 'questions-screen') {
     screenWidget = QuestionsScreen(onSelectAnswer: chooseAnswer);
   } else if (activeScreen == 'results-screen') {
-    screenWidget = const ResultsScreen();
+    screenWidget = ResultsScreen(chosenAnswers: selectedAnswers);
   } else {
     // Handle any other scenario if needed
     screenWidget = Container(); // Assign a default value
@@ -58,8 +58,8 @@ Widget build(BuildContext context) {
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color.fromARGB(255, 52, 7, 130),
-              Color.fromARGB(255, 98, 21, 231),
+              Color.fromARGB(255, 154, 99, 249),
+              Color.fromARGB(255, 102, 39, 212),
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
